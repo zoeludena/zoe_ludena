@@ -87,29 +87,37 @@
 
   <h2>Projects</h2>
   <ol>
-    <li>Big O Explained | <a href = "https://github.com/anmarkova2223/big-o-scrolly">GitHub</a></li>
+    <li>Big O Explained | <a href = "https://github.com/anmarkova2223/big-o-scrolly">GitHub</a> | Mar 2024</li>
       <ul>
         <li>Big O Explained is an interactive visualization that aims to teach python coders about time complexity and Big O Notation.</li>
         <li>This was a group project for Introduction to Data Visualization.</li>
         <li>It was coded using JavaScript, D3, and HTML, just like this webpage!</li>
       </ul>
-    <li>Interactive Income | <a href = "https://github.com/zoeludena/dsc106-Interactive-Income">GitHub</a></li>
+    <li>Interactive Income | <a href = "https://github.com/zoeludena/dsc106-Interactive-Income">GitHub</a> | Mar 2024</li>
       <ul>
         <li>Interactive Income is an interactive visualization that aims to explore the differences in income between males and females within different work groups.</li>
         <li>This was a group project for Introduction to Data Visualization.</li>
         <li>It was coded using JavaScript, D3, and HTML.</li>
       </ul>
-    <li>League of Legends Model Building | <a href = "https://github.com/zoeludena/League-of-Legends-Model-Building">GitHub</a></li>
+    <li>League of Legends Model Building | <a href = "https://github.com/zoeludena/League-of-Legends-Model-Building">GitHub</a> | Jun 2023</li>
     <ul>
       <li>League of Legends Model Building displays creating a model, fairness analysis, and permutation testing.</li>
       <li>This was a pair-programming project for The Practice and Application of Data Science.</li>
       <li>It was coded using python and HTML.</li>
     </ul>
-    <li>League of Legends Soul Analysis | <a href = "https://github.com/zoeludena/League-Of-Legends-Soul-Analysis">GitHub</a></li>
+    <li>League of Legends Soul Analysis | <a href = "https://github.com/zoeludena/League-Of-Legends-Soul-Analysis">GitHub</a> | May 2023</li>
     <ul>
       <li>League of Legends Soul Analysis displays exploratory data analysis, assessing missingness, and permutation testing.</li>
       <li>This was a pair-programming project for The Practice and Application of Data Science.</li>
       <li>It was coded using python and HTML.</li>
+    </ul>
+    <li>SPISman | <a href = "https://replit.com/@zoeludena/spis21-project-Rena-Zoe">Replit</a> | Aug 2021</li>
+    <ul>
+      <li>SPISman is a version of Pacman that incorporated every tutor and professor inside the SPIS program.</li>
+      <li>This was a pair-programming project for <a href = "https://spis.ucsd.edu/">SPIS</a>.</li>
+      <li>Fun fact: This was the first thing I had ever coded using python!</li>
+      <li>It was coded using python and pygame.</li>
+    </ul>
   </ol>
 
 </main>
