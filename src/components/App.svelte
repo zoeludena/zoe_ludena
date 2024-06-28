@@ -5,6 +5,8 @@
   import FourStar from './FourStar.svelte';
   import FiveStar from './FiveStar.svelte';
 
+  import picture from '../lib/picture/ZoeLudenaPic.jpg';
+
   import { onMount } from 'svelte';
   import * as d3 from 'd3';
 
@@ -31,7 +33,7 @@
 <main>
   <h1>Zoe Ludena</h1>
   <div class="container">
-    <img src= "src\lib\picture\0C8A1745-Zoe Ludana.jpg" alt="Picture of Zoe Ludena" class="circle-image">
+    <img src= {picture} alt="Picture of Zoe Ludena" class="circle-image">
   </div>
   <p id="centered-paragraph"><a href = "https://github.com/zoeludena">GitHub</a> | <a href = "https://www.linkedin.com/in/zoe-ludena-1906a2168/">LinkedIn</a></p>
 
