@@ -11,11 +11,18 @@
   </div>
   
   <style>
+    .rating {
+      unicode-bidi: bidi-override;
+      direction: rtl;
+      text-align: center;
+    }
     .rating span {
+      padding: 0 0.2em;
       font-size: 1.5em;
+
       color: #FFCC33;
     }
-    .gold {
+    .rating span.gold {
       color: #aaa;
     }
   </style>

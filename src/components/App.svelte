@@ -1,5 +1,9 @@
 <script>
-  
+  import OneStar from './OneStar.svelte';
+  import TwoStar from './TwoStar.svelte';
+  import ThreeStar from './ThreeStar.svelte';
+  import FourStar from './FourStar.svelte';
+  import FiveStar from './FiveStar.svelte';
 </script>
 
 <main>
@@ -19,69 +23,15 @@
 
   <h2>Skills</h2>
   <ul class="skills-list">
-    <li>Python <div class="rating">
-      <span>&#9733;</span>
-      <span>&#9733;</span>
-      <span>&#9733;</span>
-      <span>&#9733;</span>
-      <span>&#9733;</span>
-    </div></li>
-    <li>Pandas <div class="rating">
-      <span>&#9733;</span>
-      <span>&#9733;</span>
-      <span>&#9733;</span>
-      <span>&#9733;</span>
-      <span>&#9733;</span>
-    </div></li>
-    <li>NumPy <div class="rating">
-      <span>&#9733;</span>
-      <span>&#9733;</span>
-      <span>&#9733;</span>
-      <span>&#9733;</span>
-      <span>&#9733;</span>
-    </div></li>
-    <li>Scikit Learn <div class="rating">
-      <span class = "gold">&#9733;</span>
-      <span>&#9733;</span>
-      <span>&#9733;</span>
-      <span>&#9733;</span>
-      <span>&#9733;</span>
-    </div></li>
-    <li>Tableau <div class="rating">
-      <span class = "gold">&#9733;</span>
-      <span>&#9733;</span>
-      <span>&#9733;</span>
-      <span>&#9733;</span>
-      <span>&#9733;</span>
-    </div></li>
-    <li>SQL <div class="rating">
-      <span class = "gold">&#9733;</span>
-      <span>&#9733;</span>
-      <span>&#9733;</span>
-      <span>&#9733;</span>
-      <span>&#9733;</span>
-    </div></li>
-    <li>HTML <div class="rating">
-      <span class = "gold">&#9733;</span>
-      <span class = "gold">&#9733;</span>
-      <span>&#9733;</span>
-      <span>&#9733;</span>
-      <span>&#9733;</span>
-    </div></li>
-    <li>JavaScript <div class="rating">
-      <span class = "gold">&#9733;</span>
-      <span class = "gold">&#9733;</span>
-      <span class = "gold">&#9733;</span>
-      <span>&#9733;</span>
-      <span>&#9733;</span>
-    </div></li>
-    <li>Java <div class="rating">
-      <span class = "gold">&#9733;</span>
-      <span class = "gold">&#9733;</span>
-      <span class = "gold">&#9733;</span>
-      <span>&#9733;</span>
-      <span>&#9733;</span>
-    </div></li>
+    <li>Python <FiveStar /></li>
+    <li>Pandas <FiveStar /></li>
+    <li>NumPy <FiveStar /></li>
+    <li>Scikit Learn <FourStar /></li>
+    <li>Tableau <FourStar /></li>
+    <li>SQL <FourStar /></li>
+    <li>HTML <ThreeStar /></li>
+    <li>JavaScript <TwoStar /></li>
+    <li>Java <TwoStar /></li>
   </ul>
 
   <h2>Projects</h2>
@@ -167,21 +117,6 @@
       font-size: .8em;
     }
 
-    .rating {
-      unicode-bidi: bidi-override;
-      direction: rtl;
-      text-align: center;
-    }
-    .rating span {
-      padding: 0 0.2em;
-      font-size: 1.5em;
-
-      color: #FFCC33;
-    }
-    .rating span.gold {
-      color: #aaa;
-    }
-
     .skills-list {
       display: grid;
       grid-template-columns: repeat(3, 1fr); /* Creates three equal-width columns */
@@ -200,28 +135,28 @@
   }
   .container {
     display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
+    justify-content: center;
+    align-items: center;
   }
   .circle-image {
-    display: block; /* Ensure the image behaves as a block element */
-    width: 200px; /* Adjust the width and height to control the size of the circle */
+    display: block;
+    width: 200px;
     height: 200px;
-    border-radius: 50%; /* Creates a circular shape */
-    object-fit: cover; /* Ensure the image covers the entire circle without distortion */
-    border: 2px solid #ccc; /* Optional: Add a border around the circle */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
   }
 
   @media (max-width: 600px) {
   .skills-list {
-    grid-template-columns: 1fr; /* Changes to a single column */
-    gap: 10px; /* Reduces the gap between items */
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 
   .skills-list li {
-    font-size: 1em; /* Adjusts font size for readability */
+    font-size: 1em;
     padding: 10px;
-    text-align: left; /* Aligns text to the left for better readability */
+    text-align: left;
   }
 
   main {
@@ -229,15 +164,15 @@
   }
 
   h1 {
-    font-size: 2em; /* Adjusts the main heading size */
+    font-size: 2em;
   }
 
   h2 {
-    font-size: 1.5em; /* Adjusts the subheading size */
+    font-size: 1.5em;
   }
 
   p, ol, ul {
-    font-size: 1em; /* Adjusts the paragraph and list font size */
+    font-size: 1em;
   }
 }
 
