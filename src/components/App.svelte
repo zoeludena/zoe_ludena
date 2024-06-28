@@ -5,7 +5,7 @@
   import FourStar from './FourStar.svelte';
   import FiveStar from './FiveStar.svelte';
 
-  import picture from '../lib/picture/ZoeLudenaPic.jpg';
+  import picture from '../lib/picture/IMG_4044.jpg';
 
   import { onMount } from 'svelte';
   import * as d3 from 'd3';
