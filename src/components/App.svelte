@@ -1,6 +1,5 @@
 <script>
-  // Write your JS here, or import other files
-
+  
 </script>
 
 <main>
@@ -14,7 +13,7 @@
     <h2>About Me!</h2>
     <p>Hello! 👋</p>
     <p>My name is Zoe Ludena! I am a rising fourth year at the University of California, San Diego. I am a part of the first and finest college, Revelle. My major is Data Science and my minor is Business Economics. I will be graduating Winter Quarter 2025.</p>
-    <p>Currently, I work for the San Diego Sheriff Department and as a tutor for the Halıcıoğlu Data Science Institute. I tutor for Theoretical Foundations of Data Science I.</p>
+    <p>Currently, I work for the San Diego Sheriff Department and as a tutor for the Halıcıoğlu Data Science Institute. I am a tutor for Principles of Data Science in Summer Session One 2024. I have tutored for Principles of Data Science, Programming and Basic Data Structures for Data Science, Data Structures and Algorithms for Data Science, and Theoretical Foundations of Data Science I.</p>
     <p>In my free time I like to spent time with my family and friends, singing, and baking! 🍰</p>
   </div>
 
@@ -212,5 +211,34 @@
     object-fit: cover; /* Ensure the image covers the entire circle without distortion */
     border: 2px solid #ccc; /* Optional: Add a border around the circle */
   }
+
+  @media (max-width: 600px) {
+  .skills-list {
+    grid-template-columns: 1fr; /* Changes to a single column */
+    gap: 10px; /* Reduces the gap between items */
+  }
+
+  .skills-list li {
+    font-size: 1em; /* Adjusts font size for readability */
+    padding: 10px;
+    text-align: left; /* Aligns text to the left for better readability */
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2em; /* Adjusts the main heading size */
+  }
+
+  h2 {
+    font-size: 1.5em; /* Adjusts the subheading size */
+  }
+
+  p, ol, ul {
+    font-size: 1em; /* Adjusts the paragraph and list font size */
+  }
+}
 
 </style>
