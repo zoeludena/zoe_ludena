@@ -4,13 +4,35 @@
   import ThreeStar from './ThreeStar.svelte';
   import FourStar from './FourStar.svelte';
   import FiveStar from './FiveStar.svelte';
+
+  import { onMount } from 'svelte';
+  import * as d3 from 'd3';
+
+  export let message = "";
+  export let x = 0;
+  export let y = 0;
+  export let visible = false;
+
+  let tooltip;
+
+  onMount(() => {
+    tooltip = d3.select("#tooltip");
+  });
+
+  $: if (tooltip) {
+    tooltip
+      .style("left", `${x + 10}px`)
+      .style("top", `${y + 10}px`)
+      .style("visibility", visible ? "visible" : "hidden")
+      .text(message);
+  }
 </script>
 
 <main>
   <h1>Zoe Ludena</h1>
-  <!-- <div class="container">
-    <img src= "../lib/picture/0C8A1745-Zoe Ludana.jpg" alt="Picture of Zoe Ludena" class="circle-image">
-  </div> -->
+  <div class="container">
+    <img src= "src\lib\picture\0C8A1745-Zoe Ludana.jpg" alt="Picture of Zoe Ludena" class="circle-image">
+  </div>
   <p id="centered-paragraph"><a href = "https://github.com/zoeludena">GitHub</a> | <a href = "https://www.linkedin.com/in/zoe-ludena-1906a2168/">LinkedIn</a></p>
 
   <div class="content">
@@ -22,6 +44,7 @@
   </div>
 
   <h2>Skills</h2>
+  <div id="tooltip"></div>
   <ul class="skills-list">
     <li>Python <FiveStar /></li>
     <li>Pandas <FiveStar /></li>
@@ -175,5 +198,21 @@
     font-size: 1em;
   }
 }
+
+#tooltip {
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  #tooltip.visible {
+    opacity: 1;
+  }
 
 </style>
