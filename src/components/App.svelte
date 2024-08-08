@@ -48,15 +48,15 @@
   <h2>Skills</h2>
   <div id="tooltip"></div>
   <ul class="skills-list">
-    <li>Python <FiveStar /></li>
-    <li>Pandas <FiveStar /></li>
-    <li>NumPy <FiveStar /></li>
-    <li>Scikit Learn <FourStar /></li>
-    <li>Tableau <FourStar /></li>
-    <li>SQL <FourStar /></li>
-    <li>HTML <ThreeStar /></li>
-    <li>JavaScript <TwoStar /></li>
-    <li>Java <TwoStar /></li>
+    <li>Python</li>
+    <li>Pandas</li>
+    <li>NumPy</li>
+    <li>Scikit Learn</li>
+    <li>Tableau</li>
+    <li>SQL </li>
+    <li>HTML </li>
+    <li>JavaScript</li>
+    <li>Java </li>
   </ul>
 
   <h2>Projects</h2>
